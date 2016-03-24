@@ -14,6 +14,6 @@
   #?(:clj (with-open [input-stream (ByteArrayInputStream. (.getBytes a-string))]
             (t/read (t/reader input-stream :json))))
 
-  #?(:cljs (let [r (t/reader :json {:handlers {"f" (fn [value] (js/Number. a))}})]
+  #?(:cljs (let [r (t/reader :json {:handlers {"f" (fn [value] (js/Number. value))}})]
                 (t/read r a-string))))
 
