@@ -1,4 +1,4 @@
-(ns com.kaicode.teleport
+(ns stigmergy/teleport
   #?(:clj (:import [java.io ByteArrayInputStream ByteArrayOutputStream]
                    [com.cognitect.transit WriteHandler ReadHandler]))
   (:require [cognitect.transit :as t]))
